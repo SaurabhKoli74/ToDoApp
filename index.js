@@ -8,6 +8,11 @@ const app = express();
 const port = 8000;
 
 
+//Use Express router//Middleware
+app.use('/',require('./routes'));
+
+//Setup Assets
+app.use(express.static('assets'));
 
 
 

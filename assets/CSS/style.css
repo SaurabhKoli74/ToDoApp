@@ -1,0 +1,127 @@
+body{
+
+    margin:0px;
+    
+    font-family: sans-serif;
+}
+
+
+.container{
+    
+    height:100vh;
+    width:100vw;
+    background-color: gray;
+}
+
+main{
+
+    height: auto;
+    width:60%;
+    background-color: white;
+    margin:auto;
+    position: relative;
+    top: 1vh;
+    
+    
+}
+
+.heading{
+    text-align: center;
+    color:lightgray;
+    font-family:'Courier New', Courier, monospace;
+    padding: 5px;
+    border-bottom: solid 1px lightgray;
+
+}
+
+
+.display-block{
+    display: block;
+}
+
+
+.todo-details{
+    padding:0.5rem;
+   
+    flex-grow: 1;
+    border: solid 1px lightgray;
+    
+    
+}
+
+
+input{
+    border:none;
+    width: 100%;
+    
+    height: 20px;
+
+    font-size: inherit;
+}
+
+select{
+    width: 100%;
+    border: none;
+}
+
+input:focus{
+    outline:none;
+}
+
+
+.form-container{
+    display:flex;
+    flex-direction: column;
+
+}
+
+
+.todo-details-container{
+    display: flex;
+}
+
+
+.button-container{
+    display: flex;
+    justify-content: center;
+
+    
+}
+
+.button-container div{
+    margin:1rem
+
+
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+.add-task button{
+    background-color: black;
+    color:white;
+    padding:0.5rem;
+    height: auto;
+    width: 150px;
+    font-size: medium;
+
+}
+
+.delete-task{
+    background-color: red;
+    color:white;
+    width: 150px;
+    font-size: medium;
+
+    padding:0.5rem;
+    text-align: center;
+}
+
+.delete-task a{
+    color:white;
+    text-decoration: none;
+}
+i{
+    padding-right: 0.5rem;
+}

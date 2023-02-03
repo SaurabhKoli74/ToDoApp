@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/style.css">
+    <script src="https://kit.fontawesome.com/2250fa0f5a.js" crossorigin="anonymous"></script>
+    <title>
+        <%= locals.title %>
+    </title>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <main>
+
+            <div class="heading">
+                <h1>TODO App</h1>
+
+
+            </div>
+
+
+            <form action="/create-todo" method="post" class="form-container">
+
+                <div class="todo-details">
+                    <label for="description" class="display-block"> DESCRIPTION</label>
+                    <input type="text" placeholder="What do you need to do?" id="description
+                    ">
+                </div>
+                <div class="todo-details-container">
+                    <div class="todo-details">
+                        <label for="category" class="display-block">CATEGORY</label>
+
+                        <select name="category" id="category" aria-placeholder="Hello World">
+                            <option  >Choose a category</option>
+
+                            <option value="personal">Personal</option>
+                            <option value="School">School</option>
+                        </select>
+                        
+
+                    </div>
+                    <div class="todo-details">
+                        <label for="due-date">DUE-DATE</label>
+                        <input type="date">
+                    </div>
+
+                    
+
+
+
+
+                </div>
+
+                <div class="button-container">
+                    <div class="add-task">
+                        <button type="submit">
+                        <i class="fa-solid fa-plus"></i><span>ADD TASK</span>
+                        </button>
+                    </div>
+                    <div class="delete-task">
+                        <a href="/delete-contact">
+                            <i class="fa-sharp fa-solid fa-trash"></i><span>DELETE TASKS</span> </a>
+                        
+                    </div>
+                </div>
+            </form>
+
+            <div class="todo-list">
+
+
+                
+            </div>
+
+
+
+
+
+        </main>
+
+
+
+
+    </div>
+
+</body>
+
+</html>
