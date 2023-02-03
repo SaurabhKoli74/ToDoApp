@@ -1,0 +1,19 @@
+{
+  "name": "todoapp",
+  "version": "1.0.0",
+  "description": "It is basic ToDoApp on which we can perform various CRUD operation such as Insert, Delete, Update.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"nodemon index.js"
+    
+  },
+  "keywords": [
+    "ToDoApp"
+  ],
+  "author": "Saurabh Koli",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
