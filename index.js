@@ -1,18 +1,37 @@
 //Import Express library
 const express = require('express');
 
+const expressEjsLayouts = require('express-ejs-layouts');
+
+
 //Creating instance of express
 const app = express();
 
 //Initializing port
 const port = 8000;
 
+//require mongoose
+const db = require('./config/mongoose');
+
+//Importing collection which has defined schema
+const Todo = require('./models/Todo');
+
+
+app.use(express.urlencoded()); //Middleware acts as a parser
+
+//Setup Assets
+app.use(express.static('assets'));
+
+//Setup express-ejs-layouts
+app.use(expressEjsLayouts);
+
+//extract styles and scripts from sub pages into the layouts
+app.set('layout extractStyles',true);
+app.set('layout extractScripts',true);
 
 //Use Express router//Middleware
 app.use('/',require('./routes'));
 
-//Setup Assets
-app.use(express.static('assets'));
 
 
 

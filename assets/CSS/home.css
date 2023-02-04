@@ -1,127 +1,133 @@
-body{
+body {
 
-    margin:0px;
-    
+    margin: 0px;
+
     font-family: sans-serif;
 }
 
 
-.container{
-    
-    height:100vh;
-    width:100vw;
+.container {
+
+    height: 100vh;
+    width: 100vw;
     background-color: gray;
 }
 
-main{
+main {
 
     height: auto;
-    width:60%;
+    width: 60%;
     background-color: white;
-    margin:auto;
+    margin: auto;
     position: relative;
     top: 1vh;
-    
-    
+
+
 }
 
-.heading{
+.heading {
     text-align: center;
-    color:lightgray;
-    font-family:'Courier New', Courier, monospace;
+    color: lightgray;
+    font-family: 'Courier New', Courier, monospace;
     padding: 5px;
     border-bottom: solid 1px lightgray;
 
 }
 
 
-.display-block{
+.display-block {
     display: block;
 }
 
 
-.todo-details{
-    padding:0.5rem;
-   
+.todo-details {
+    padding: 0.5rem;
+
     flex-grow: 1;
     border: solid 1px lightgray;
-    
-    
+
+
 }
 
 
-input{
-    border:none;
+input {
+    border: none;
     width: 100%;
-    
+
     height: 20px;
 
     font-size: inherit;
 }
 
-select{
+select {
     width: 100%;
     border: none;
 }
 
-input:focus{
-    outline:none;
+input:focus {
+    outline: none;
 }
 
 
-.form-container{
-    display:flex;
+.form-container {
+    display: flex;
     flex-direction: column;
 
 }
 
 
-.todo-details-container{
+.todo-details-container {
     display: flex;
 }
 
 
-.button-container{
+.button-container {
     display: flex;
     justify-content: center;
 
-    
-}
-
-.button-container div{
-    margin:1rem
-
 
 }
 
-button:hover{
+.button-container div {
+    margin: 1rem
+}
+
+button:hover {
     cursor: pointer;
 }
 
-.add-task button{
+.add-task button {
     background-color: black;
-    color:white;
-    padding:0.5rem;
+    color: white;
+    padding: 0.5rem;
     height: auto;
     width: 150px;
     font-size: medium;
 
 }
 
-.delete-task{
+.delete-task {
     background-color: red;
-    color:white;
+    color: white;
     width: 150px;
     font-size: medium;
 
-    padding:0.5rem;
+    padding: 0.5rem;
     text-align: center;
 }
 
-.delete-task a{
-    color:white;
+.delete-task a {
+    color: white;
     text-decoration: none;
 }
-i{
+
+i {
     padding-right: 0.5rem;
 }
+
+
+
+
+
+
+
