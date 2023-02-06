@@ -1,6 +1,5 @@
 //Import Express library
 const express = require('express');
-
 const expressEjsLayouts = require('express-ejs-layouts');
 
 

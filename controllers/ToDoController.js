@@ -1,14 +1,13 @@
 
 // //Importing collection which has defined schema
 // const Todo = require('./models/Todo');
-
 const Todo = require("../models/Todo");
 
 
 
 module.exports.createToDo = function(req,res){
 
-    console.log(req);
+    // console.log("inside CreateToDo");
     Todo.create({
         desc:req.body.desc,
         category:req.body.category,
@@ -19,7 +18,9 @@ module.exports.createToDo = function(req,res){
             return;
         }
 
-        console.log(newtodo);
+        // console.log(newtodo);
+         
+      
         return res.redirect('back');
     });
 
@@ -47,3 +48,19 @@ module.exports.ToDolist = function(req,res){
 
    
 };
+
+
+module.exports.deleteTodo = function(req,res){
+    let uid = req.query.id;
+    uid = uid.split(',');
+    for(let i = 0;i<uid.length;i++){
+        Todo.findByIdAndDelete(uid[i],function(err){
+            if(err){
+                console.log(err);
+                return;
+            }
+        });
+
+    }
+    return res.redirect('/');
+}

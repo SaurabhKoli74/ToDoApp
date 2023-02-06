@@ -8,7 +8,8 @@ body {
 
 .container {
 
-    height: 100vh;
+    min-height: 100vh;
+    height: auto;
     width: 100vw;
     background-color: gray;
 }
@@ -25,12 +26,25 @@ main {
 
 }
 
+.pos {
+    position: sticky;
+    left: 0px;
+    top: 0px;
+    height: auto;
+    width: 100%;
+    background-color: white;
+    z-index: 1;
+    
+}
+
 .heading {
+
     text-align: center;
     color: lightgray;
     font-family: 'Courier New', Courier, monospace;
     padding: 5px;
     border-bottom: solid 1px lightgray;
+
 
 }
 
@@ -88,8 +102,18 @@ input:focus {
 
 }
 
-.button-container div {
-    margin: 1rem
+.button-container div button {
+    margin: 1rem;
+    padding: 0.5rem;
+    height: auto;
+    width: 150px;
+    font-size: small;
+    color: white;
+    text-align: center;
+    
+
+
+
 }
 
 button:hover {
@@ -98,22 +122,14 @@ button:hover {
 
 .add-task button {
     background-color: black;
-    color: white;
-    padding: 0.5rem;
-    height: auto;
-    width: 150px;
-    font-size: medium;
+    
 
 }
 
-.delete-task {
+.delete-task button{
     background-color: red;
-    color: white;
-    width: 150px;
-    font-size: medium;
-
-    padding: 0.5rem;
-    text-align: center;
+    
+    
 }
 
 .delete-task a {
@@ -123,6 +139,87 @@ button:hover {
 
 i {
     padding-right: 0.5rem;
+}
+
+ul {
+    /* overflow: scroll; */
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    padding: 2px 15px 2px 15px;
+}
+
+
+.list {
+    position: relative;
+    /* top: 40vh; */
+    /* overflow: scroll; */
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+
+
+
+}
+
+.list li {
+    list-style: none;
+    padding: 0px;
+    border-top: solid 2px lightgray;
+    margin-bottom: 5px;
+    padding: 1rem;
+
+
+}
+
+.list h3 {
+    display: inline-block;
+    width: 100%;
+    margin: 0px;
+    margin-bottom: 2px;
+
+
+}
+
+
+.todo-list-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-ar;
+}
+
+.category {
+    box-sizing: border-box;
+    width: 100px;
+    height: 40px;
+    color: rgb(20, 19, 19);
+    /* background-color: transparent; */
+    border: solid gray 1px;
+    /* box-shadow: 5px 5px 2px 1px lightgray; */
+    text-align: center;
+    padding-top: 10px;
+}
+
+
+
+
+
+
+.todo-desc-duedate {
+    flex-grow: 1;
+}
+
+
+.list input {
+    padding: 0;
+    margin-right:1rem;
+    height: 1rem;
+    width:1rem;
+    /* margin-right: 15px; */
+    /* display: none;   */
+    cursor: pointer;
+    position: relative;
+
 }
 
 

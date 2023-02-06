@@ -8,4 +8,5 @@ router.get('/',toDoController.ToDolist);
 
 router.post('/create-todo',toDoController.createToDo);
 
+router.post('/delete-todo',toDoController.deleteTodo);
 module.exports = router;
